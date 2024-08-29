@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Configuración del Juego</title>
+</head>
+<body>
+<h1>Configuración del Juego de Ahorcado</h1>
+
+<form method="POST" action="/guardar" >
+    <label>Tema:</label>
+    <select name="tema">
+        <option value="Animales">Animales</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Paises">Paises</option>
+    </select><br>
+
+    <label>Longitud de la palabra:</label>
+    <input type="number" name="longitud" required><br>
+
+    <label>Número máximo de intentos:</label>
+    <input type="number" name="maxint" required><br>
+
+    <button type="submit">Guardar Configuración</button>
+</form>
+
+</body>
+</html>
